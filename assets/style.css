@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.submit {
+    background-color: #a1ee82;
+    border-radius: 20px;
+    border: solid 2px rgb(224, 253, 224);
+}
+
+.submit:hover {
+    background-color:aqua;
+    border: solid 2px rgb(26, 26, 197);
+}
+
+img {
+    margin: 5px;
+}
