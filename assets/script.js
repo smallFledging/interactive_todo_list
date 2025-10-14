@@ -41,11 +41,13 @@ function editListItem(e) {
     let parentList = Array.prototype.slice.call(document.getElementById("taskList").children);
     let index = parentList.indexOf(spanEl.parentElement);
     if(spanEl.innerHTML.includes("input")){
-        spanEl.innerHTML = `<span> ${spanEl.firstChild.value} </span>`;
-        taskArray[index] = e.parentElement.children[0].innerText.trim();
+        if(spanEl.firstChild.value.trim() === "") {alert("Task name cannot be empty.")}
+        else {
+            spanEl.innerHTML = `<span> ${spanEl.firstChild.value} </span>`;
+            taskArray[index] = e.parentElement.children[0].innerText.trim();
+        }
     }
     else {
-        spanEl.innerHTML = `<input id="input-${buttonNum}" value="${spanEl.innerText}"></input>
-        `;
+        spanEl.innerHTML = `<input id="input-${buttonNum}" value="${spanEl.innerText}"></input>`;
     }
 } 
